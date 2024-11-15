@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-background: #3c3c3c;
+
+  /* Main backgrounds */
+  --bg-primary-dark: #171836;
+  --bg-primary-light: #1f2143;
+  --bg-orange-dark: #be231b;
+  --bg-green-dark: #007e28;
+  --bg-green-light: #223a2f;
+
+  /* Skill icons backgrounds */
+  --bg-html: rgba(245, 68, 59, 0.2);
+  --bg-css: rgba(22, 144, 231, 0.2);
+  --bg-js: rgba(247, 223, 30, 0.2);
+  --bg-react: rgba(57, 193, 215, 0.2);
+  --bg-tailwind: rgba(0, 172, 193, 0.2);
+
+  /* Text colors */
+  --text-gray-dark: #c0c0c0;
+  --text-gray-light: rgba(192, 192, 192, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-background);
+}
+
+@layer utilities {
+  /* section utility */
+  .section {
+    @apply w-full bg-[var(--bg-primary-dark)] px-5 py-8 rounded-xl;
+  }
+
+  /* button utility */
+  .btn-primary {
+    @apply bg-[var(--bg-primary-light)] text-[var(--text-gray-dark)] hover:shadow-sm hover:shadow-[#BE231B] hover:text-[#BE231B] px-3 py-2 rounded-md smooth;
+  }
+
+  .btn-secondary {
+    @apply bg-[var(--bg-primary-dark)] text-[var(--text-gray-light)] hover:shadow-sm hover:shadow-[#BE231B] hover:text-[#BE231B] px-3 py-2 rounded-md smooth;
+  }
+
+  /* navbar utilities */
+  .nav-list {
+    @apply flex gap-3 sm:gap-5;
+  }
+  .nav-item {
+    @apply bg-[var(--bg-primary-light)] text-[var(--text-gray-dark)] hover:shadow-sm hover:shadow-[#BE231B] hover:text-[#BE231B] p-2 rounded-md smooth;
+  }
+}
+
+/* transition */
+@layer transitions {
+  .smooth {
+    @apply transition-all ease-in duration-300;
+  }
+}
