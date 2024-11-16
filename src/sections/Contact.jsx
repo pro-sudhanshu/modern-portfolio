@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section id="contact" className="flex flex-col gap-10 section">
       {/* top */}
-      <div className="flex items-center justify-between">
+      <div className="w-full flex items-center justify-between">
         <Heading headingText="Hire Me" />
         <div className="flex items-center gap-2 px-2 py-2 sm:py-0.5 rounded-full sm:rounded-md bg-[var(--bg-green-light)]">
           <div className="h-2 w-2 rounded-full bg-[var(--bg-green-dark)] animate-ping sm:animate-none"></div>
@@ -15,30 +15,30 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-10">
+      <div className="w-full flex flex-col gap-10">
         {/* heading */}
-        <div className="flex flex-col items-center sm:items-start gap-5">
-          <h2 className="text-white text-4xl font-bold">
+        <div className="flex flex-col gap-3 text-center sm:text-start">
+          <h2 className="text-white text-3xl sm:text-4xl font-bold">
             Let’s work together.
           </h2>
-          <p className="text-[var(--text-gray-dark)] text-lg text-center sm:text-left">
+          <p className="text-[var(--text-gray-dark)] text-base sm:text-lg text-center sm:text-left">
             Crafting seamless user experiences with visually appealing web
             designs.
           </p>
         </div>
 
         {/* contact details */}
-        <div className="w-full flex flex-col justify-between gap-3 bg-[var(--bg-primary-light)] p-3 rounded-md">
+        <div className="w-full flex flex-col gap-3 bg-[var(--bg-primary-light)] p-3 rounded-md">
           {/* phone */}
           <div className="flex items-center gap-3 bg-[var(--bg-primary-dark)] rounded-md py-3 px-4 hover:shadow-sm hover:shadow-[#BE231B] hover:text-[#BE231B] smooth cursor-pointer">
-            <div className="h-14 w-14 flex items-center justify-center rounded-full bg-[var(--bg-primary-light)]">
+            <div className="h-12 w-12 sm:h-14 sm:w-14 flex items-center justify-center rounded-full bg-[var(--bg-primary-light)] flex-shrink-0">
               <FaPhoneAlt size={30} />
             </div>
             <div className="flex flex-col">
               <p className="text-[var(--text-gray-dark)] text-lg font-bold">
                 Phone
               </p>
-              <p className="text-[var(--text-gray-dark)] text-lg">
+              <p className="text-[var(--text-gray-dark)] text-base">
                 +91 9140227518
               </p>
             </div>
@@ -46,15 +46,16 @@ const Contact = () => {
 
           {/* email */}
           <div className="flex items-center gap-3 bg-[var(--bg-primary-dark)] rounded-md py-3 px-4 hover:shadow-sm hover:shadow-[#BE231B] hover:text-[#BE231B] smooth cursor-pointer">
-            <div className="h-14 w-14 flex items-center justify-center rounded-full bg-[var(--bg-primary-light)]">
+            <div className="h-12 w-12 sm:h-14 sm:w-14 flex items-center justify-center rounded-full bg-[var(--bg-primary-light)] flex-shrink-0">
               <FaEnvelope size={30} />
             </div>
-            <div className="flex flex-col">
+            <div className="w-full flex flex-col overflow-x-auto">
               <p className="text-[var(--text-gray-dark)] text-lg font-bold">
                 Email
               </p>
-              <p className="text-[var(--text-gray-dark)] text-lg">
-                iamsudhanshugupta@gmail.com
+              <p className="text-[var(--text-gray-dark)] text-base">
+                iamsudhanshugupta
+                <span className="block sm:inline-block">@gmail.com</span>
               </p>
             </div>
           </div>

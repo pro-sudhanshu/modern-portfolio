@@ -38,16 +38,13 @@ function Navbar() {
         <a href="#projects" className="nav-item" title="Projects">
           <BsPersonWorkspace size={25} />
         </a>
-        <a href="#contact" className="nav-item" title="Contact">
-          <FaPhoneVolume size={25} />
-        </a>
       </nav>
       <button
         onClick={() => (window.location.href = "/#contact")}
         className="flex gap-2 items-center btn-primary"
       >
-        <BsPlusCircleFill size={15} />
-        <p className="text-base font-bold">Hire Me</p>
+        <FaPhoneVolume size={15} />
+        <p className="text-base font-bold">Contact</p>
       </button>
     </header>
   )
